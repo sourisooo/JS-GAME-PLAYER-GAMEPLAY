@@ -246,7 +246,7 @@ export class JumpingLeft extends State {
 
     enter(){
 
-        this.player.frameY=4;
+        this.player.frameY=3;
 
         if(this.player.onGround())this.player.vy -=40;
         this.player.speed=-this.player.maxSpeed;
@@ -280,7 +280,7 @@ export class JumpingRight extends State {
 
     enter(){
 
-        this.player.frameY=3;
+        this.player.frameY=2;
         if(this.player.onGround())this.player.vy -=40;
         this.player.speed=this.player.maxSpeed;
         this.player.maxFrame=6;
